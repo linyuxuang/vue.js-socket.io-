@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    哈哈哈哈
+ <script src="/socket.io/socket.io.js"></script>
+ <script>
+  var socket = io('http://localhost:3000');
+  //socket.on 监听服务端发过来的名字为haha事件的数据(获取服务端的数据)
+  socket.on('haha', function (data) {
+    console.log(data);
+  });
+  //socket.emit 给服务端触发一个名为goods事件(客户端给服务端发送数据)
+  socket.emit('goods',{name:'王哈哈',age:90})
+</script>
+</body>
+</html>

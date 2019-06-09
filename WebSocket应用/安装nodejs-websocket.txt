@@ -1,0 +1,6 @@
+
+  npm install nodejs-websocket    安装原生websocket
+
+  npm install --save socket.io    安装框架socket
+
+  npm install express --save   安装express 
